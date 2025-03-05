@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+   background-image:linear-gradient(to right,#94352e, #69463e);
+   color:#ffff;
+   padding: 0 2rem;
+   height: 4.8rem;
+   align-items: center;
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+
+.div-logo{
+    display: flex;
+    margin: 0 10px;
+}
+
+.div-logo a{
+    text-decoration:none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    font-family: "Pacifico",cursive;
+    gap:10px;
+    font-size: 25px;
+    padding:0 20px 5px 0;
+
+}
+
+
+.img-logo{
+    width:45px;
+    border-radius: 50px;
+
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    padding: 5px;
+    
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: #ffff;
+    gap: 2rem;
+}
+
+
+.menu-link{
+    text-decoration: none;
+    color:#ffb3;
+    display: inline-block;
+    font-size: 1.25rem;}
+     .menu-link:hover{
+       color:#ffffff;
+       transition-duration: 500ms;
+    }
+
+
+
+.button-header{
+    border-radius:25px;
+    padding: 6px 1rem;
+    background-color: #482c22;
+    color:white;
+    cursor: pointer;
+    border: none;
+   font-size: 12px;
+   height:40px;
+   margin: 10px;
+ 
+
+
+}
+
+.button-header:hover{
+    transform: scale(1.05);
+    transition-duration: 200ms;
+   
+}
+
+.img-button-links{
+    margin-left: 2px;
+}
+
+
+main{
+    min-height: 600px;
+    padding: 0 50px;
+    background-color: #3a1c15;
+    display: flex;
+     justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      
+}
+
+.container-home{
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.div-text-home{
+    
+text-align: start;
+}
+
+.h1-text-home{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.span-home{
+     font-family: "Pacifico",cursive;
+     color: #270c03;
+}
+
+.button-home{
+border: 1px solid #d34a41;
+color: #ffffff;
+background-image:linear-gradient(to right,#d34a41,#4a1e1be6);
+border-radius: 9999px;
+padding: 10px 15px;
+cursor: pointer;
+text-align: center;
+display: inline-block;
+transition: tranform 0.2s ease-in-out;
+
+&:hover{
+  transform: scale(1.05);
+
+}
+}
+
+.img-home{
+transform: scale(1.25);
+animation: balanco 6s linear infinite;
+width: 450px;
+
+}
+
+@keyframes balanco {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    50%{
+        transform:rotate(15deg);
+
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+
+.section-services{
+    padding: 2.5rem 3rem;
+    margin: 0 auto;
+    min-height: 600px;
+
+
+}
+
+.container-services{
+    text-align: center;
+    margin: 0 auto 5rem;
+    padding: 0 3rem;
+
+}
+
+.title-section-services{
+    font-size: 2.25rem;
+    font-family: "Pacifico",cursive;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+
+.div-cards{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 1.25rem;
+   place-items: center;
+    
+
+}
+
+.service-card{
+    border-radius: 1rem;
+    background-color: rgb(245, 235, 214);
+    box-shadow:0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+    max-width: 300px;
+    position: relative;
+}
+
+.service-card:hover{
+    background-color: #854d3d;
+    color: #ffffff;
+}
+
+.div-card-img{
+    height: 122px;
+}
+
+.image-card{
+    max-width:200px ;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-3.5rem);
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.service-card:hover  .image-card{
+    transform: translateY(-3.5rem) scale(1.05) rotate(6deg);
+}
+.div-text-service-card{
+
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.h1-cards-services{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:0.5rem;
+}
+
+
+.p-card-service{
+    color:#272d37;
+    transition: all 0.7s ease;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin-bottom: 1 rem;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+.service-card:hover  .p-card-service{
+color: #ffffff;
+    
+}
+
+footer{
+    background-color: #270c03;
+    min-height: 150px;
+    padding: 1rem;
+}
+
+.div-logo-footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.p-footer{
+    color: #ffffff;
+    margin: 1rem;
+}
+
+@media screen and (max-width:870px){
+.div-logo a {
+    font-size: 1.5rem;
+}
+
+.menu-list {
+    display: none;
+}
+
+}
+
+@media screen and (max-width:548px){
+    header{
+        padding: 0;
+    }
+
+
+    .div-logo a{
+        font-size:1.4rem;
+    }
+
+}
+
+@media screen  and (max-width:1140px){
+
+    .h1-text-home{
+        font-size:2.4rem ;
+    }
+
+    
+}
+
+@media screen  and (max-width:1023px){
+
+    .h1-text-home{
+        font-size:2.2rem ;
+    }
+
+    
+}
+
+
+@media screen  and (max-width:1000px){
+
+    .h1-text-home{
+        font-size:2.0rem ;
+    }
+
+    .img-home{
+        width: 400px; ;
+    }
+    
+}
+
+
+@media screen  and (max-width:960px){
+
+  main{
+    min-height: 550px;
+
+
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  .div-text-home{
+    text-align: center;
+
+  }
+  .h1-text-home{
+    font-size: 2.6rem;
+    padding: 15px;
+  }
+
+  .img-home{
+    width: 300px;
+  }
+}
+
+
+@media screen  and (max-width:600px){
+    .container-home{
+        padding: 50px 0;
+        
+    }
+
+    .h1-text-home{
+        font-size:2.0rem ;
+    }
+    .img-home{
+        padding-top:25px ;
+        width: 250px;
+    }
+
+}
+
+
+@media screen  and (max-width:460px){
+ 
+
+    .h1-text-home{
+        font-size:1.5rem ;
+    }
+    .img-home{
+        width: 200px;
+    }
+
+}
+
+
+@media screen  and (max-width:860px){
+ 
+.div-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4.0rem;
+
+}
+   
+}
+
+@media screen  and (max-width:860px){
+ 
+.div-cards{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    gap: 4.0rem;
+
+}
+.image-card{
+max-width: 170px;
+margin-top: 10px;
+
+}
+.div-text-service-card{
+    margin-top: -35px;
+}
+
+}
