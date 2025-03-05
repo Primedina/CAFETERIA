@@ -46,8 +46,8 @@ O site foi construído utilizando as mais recentes tecnologias web, com design r
 
 
 <div style="display: flex;" >
-<img src="https://simpleicons.org/icons/css.svg"  width="100">
-<img src="https://simpleicons.org/icons/javascript.svg"  width="100">
-<img src="https://simpleicons.org/icons/html5.svg" width="100">
+<img src="https://simpleicons.org/icons/css.svg"  width="50">
+<img src="https://simpleicons.org/icons/javascript.svg"  width="50">
+<img src="https://simpleicons.org/icons/html5.svg" width="50">
 
 </div>
